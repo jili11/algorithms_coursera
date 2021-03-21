@@ -98,7 +98,8 @@ public class PointSET {
      */
     public Point2D nearest(Point2D p)
     {
-        if (pointSet.isEmpty()) return null;
+        if (pointSet.isEmpty())
+            return null;
 
         Point2D result;
         Iterator<Point2D> it = pointSet.iterator();

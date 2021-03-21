@@ -96,6 +96,7 @@ public class KdTree {
     // helper: does the subtree rooted at node contain (x, y)?
     private boolean contains(Node node, double x, double y) {
         if (node == null) return false;
+
         if (node.point.x() == x && node.point.y() == y) return true;
 
         if (node.vertical && x < node.point.x() || !node.vertical && y < node.point.y()) {
